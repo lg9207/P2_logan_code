@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booking</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="header">
+    <div class="bloc_page">
+        <header>
             <img src="images/Booki.png" alt="logo booki" title="Cliquez pour agrandir" />
             <nav>
                 <ul>
@@ -18,21 +21,27 @@
                     <li><a href="#">Activités</a></li>
                 </ul>
             </nav>
-    </header>
-    <div class="navigation">
-        <h1>Trouver votre hébergements pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <form method="POST" action="">
-            <input type="text" name="lieux" id="lieux" placeholder="ex : Paris">
-            <button type="submit">Recherche</button>
-        </form>
-        <div class="filtre">
-            <h3>filtre</h3>
-            <h3>Economique</h3>
-            <h3>Familiale</h3>
-            <h3>Romantique</h3>
-            <h3>Animaux autorisés</h3>
-            <p>icone plus de 500 logements sont disponibles dans cette ville</p>
+        </header>
+        <div class="navigation">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form method="GET" action="">
+                <i class="fas fa-map-marker-alt"></i><input type="text" name="lieux" id="lieux" size="40">
+                <button type="">Rechercher</button>
+            </form>
+            <div class="filtre">
+                <h3>Filtres</h3>
+                <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+                <button type=""><a href="">Economique</a></button>
+                <div class="icon"><i class="fas fa-child"></i></div>
+                <button type=""><a href="">Familial</a></button>
+                <div class="icon"><i class="fas fa-heart"></i></div>
+                <button type=""><a href="">Romantique</a></button>
+                <div class="icon"><i class="fas fa-dog"></i></div>
+                <button type=""><a href="">Animaux autorisés</a></button>
+            </div>
+            <div class="iconp"><i class="fas fa-info">Plus de 500 logements sont disponibles dans cette ville</i>
+            </div>
         </div>
 
         <body>
@@ -40,24 +49,35 @@
         </body>
         <footer class="footer">
             <div class="propos">
-                <h2> A propos</h2>
-                <a href="">Fonctionnement du site</a>
-                <a href="">Conditions générales de vente</a>
-                <a href="">Données et confidentialité</a>
+                <nav>
+                    <h2> A propos</h2>
+                    <ul>
+                        <li><a href="">Fonctionnement du site</a></li>
+                        <li><a href="">Conditions générales de vente</a></li>
+                        <li><a href="">Données et confidentialité</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="hébergement">
-                <h2>Nos hébergements</h2>
-                <a href="">Charte qualité</a>
-                <a href="">Soumettre votre hôtel</a>
+                <nav>
+                    <h2>Nos hébergements</h2>
+                    <ul>
+                        <li><a href="">Charte qualité</a></li>
+                        <li><a href="">Soumettre votre hôtel</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="assistance">
-                <h2>assistance</h2>
-                <a href="">Centre d'aide</a>
-                <a href="">Nous contacter</a>
-
+                <nav>
+                    <h2>assistance</h2>
+                    <ul>
+                        <li><a href="">Centre d'aide</a></li>
+                        <li><a href="">Nous contacter</a></li>
+                    </ul>
+                </nav>
             </div>
         </footer>
-
+    </div>
 </body>
 
 </html>

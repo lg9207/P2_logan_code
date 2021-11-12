@@ -1,1 +1,198 @@
+*
+{
+    margin: 10px;
+}
+.bloc_page
+{
+   
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: justify;
+}
+header
+{
+    display: flex;
+    height: 50px;
+    margin-top: 1em ;
+}
+header img
+{
+    float: left;
+    width: min-content;
+    margin-top: 0px;
+    flex: 0;
+}
+header nav 
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-self: center;
+    flex: 1;
+    text-align: right;
+} 
+header nav a
+{
+    text-decoration:none;
+    color: black;
+}
+header nav a:hover
+{
+    color: rgb(29, 149, 247);
+}
 
+header nav ul
+{
+    width: 200px;
+    display:flex ;
+    right: 1%;
+    bottom:80%;
+    top: 0em;
+    text-decoration: none;
+    padding-right: 90px;   
+}
+header nav li 
+{
+    width:;
+    height: auto;
+    margin-right: 50px;
+    display: inline;
+
+}
+.navigation
+{
+    display: column;
+
+}
+.navigation h1
+{
+    width: 500px;
+    font-size: medium;
+
+}
+.navigation p
+{
+    width: 400px;
+    font-size: small;
+    margin-top: ;
+    padding-top: ;
+}
+.navigation form button
+{
+    background-color: #3373FF;
+    color: white;
+    height: 2em;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    height: 30px;
+    border-top-right-radius : 1em;
+    border-bottom-right-radius: 1em;
+    border:none;
+}
+#lieux
+{
+    border: white;
+    width: 100px;
+    height: 22px;
+}
+.filtre
+{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    margin-bottom: 2em;
+    width: auto;
+    height: 30px;
+}
+.icon
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    left: 35px;
+    border: transparent solid 2px;
+    border-radius: 100px;
+    background-color: rgb(215, 229, 241);
+    color:#3373FF;
+}
+.filtre button 
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: transparent;
+    border: rgb(211, 210, 210) 1px solid;
+    border-top-right-radius : 1em;
+    border-bottom-right-radius: 1em;
+}
+.filtre button a
+{
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: auto;
+    text-decoration: none;
+    color: black;
+    
+}
+.filtre button a:hover
+{
+    color:rgb(29, 149, 247);
+}
+.filtre h3
+{
+    display: inline;
+    justify-content: center;
+    align-self: center;
+    margin-right: 2px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.iconp i
+{
+    font-family;
+}
+footer
+{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+footer h2
+{
+    text-align:;
+}
+footer nav
+{
+width: 250px;
+margin: 0;
+padding: 0;
+margin-right: 10em;
+}
+footer nav a
+{
+    text-decoration: none;
+    color: black;
+}
+footer nav ul
+{
+    
+    list-style-type: none; 
+    padding-left: 0;
+    margin-left: 0;
+}
+footer nav li
+{
+    margin-left:0 ;
+
+}
+footer nav a:hover
+{
+    color:rgb(29, 149, 247) ;
+}
