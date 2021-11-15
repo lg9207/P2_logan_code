@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,21 +29,35 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <form method="GET" action="">
-                <i class="fas fa-map-marker-alt"></i><input type="text" name="lieux" id="lieux" size="40">
-                <button type="">Rechercher</button>
+                <i class="fas fa-map-marker-alt"></i>
+                <input class="inputSearch" type="text" name="lieux" class="lieux" size="40">
+                <button class="button" type="">Rechercher</button>
             </form>
             <div class="filtre">
                 <h3>Filtres</h3>
-                <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
-                <button type=""><a href="">Economique</a></button>
-                <div class="icon"><i class="fas fa-child"></i></div>
-                <button type=""><a href="">Familial</a></button>
-                <div class="icon"><i class="fas fa-heart"></i></div>
-                <button type=""><a href="">Romantique</a></button>
-                <div class="icon"><i class="fas fa-dog"></i></div>
-                <button type=""><a href="">Animaux autorisés</a></button>
+                <div class="filtreButton">
+                    <i class="fas fa-money-bill-wave icon"></i>
+                    <button type="">Economique</button>
+                </div>
+
+                <div class="filtreButton">
+                    <i class="fas fa-child"></i>
+                    <button type="">Familial</button>
+                </div>
+
+                <div class="filtreButton">
+                    <i class="fas fa-heart"></i>
+                    <button type="">Romantique</button>
+                </div>
+
+                <div class="filtreButton">
+                    <i class="fas fa-dog"></i>
+                    <button type="">Animaux autorisés</button>
+                </div>
             </div>
-            <div class="iconp"><i class="fas fa-info">Plus de 500 logements sont disponibles dans cette ville</i>
+            <div class="infoIcone">
+                <i class="fas fa-info"></i>
+                Plus de 500 logements sont disponibles dans cette ville
             </div>
         </div>
 
