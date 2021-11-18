@@ -139,6 +139,56 @@ border: none;
     border-radius: 100%;
     border: #F2F2F2 solid 1px ;
 }
+.h2titre
+{
+    margin-bottom: 0px;
+}
+.hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.blochebergement
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.blochebergement img
+{
+    width: 190px;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.blochebergement:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);   
+}
+.textehebergement h3
+{
+    display: flex;
+    width: 180px;
+}
+.etoiles
+{
+    display: inline;
+}
+.etoiles ul
+{
+ display: flex;
+ margin-left: 0%;
+ padding-left: 0%;
+ font-size: 12px;
+ align-items: flex-start;
+}
+.etoiles li
+{
+    list-style-type: none;
+    width: 0%;
+}
 footer
 {
     display: flex;
