@@ -8,68 +8,54 @@ body
     font-family: 'Raleway', sans-serif;
     font-size: small;
     text-align: justify;
+    margin: 0px;
+    color: black;
 }
-header
+.blocenTete
 {
     display: flex;
-    height: 50px;
-    margin-top: 1em ;
+
 }
-header img
+.logoBooki
 {
     float: left;
-    width: min-content;
-    margin-top: 0px;
-    flex: 0;
+    width: 120px;
 }
-header nav 
+.menuNavigation
 {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
     align-self: center;
+    justify-content: right;
     flex: 1;
-    text-align: right;
+    gap: 40px;
 } 
-header nav a
+.texteNavigation
 {
     text-decoration:none;
     color: black;
 }
-header nav a:hover
+.texteNavigation:hover
 {
     color: #0065FC;
 }
-header ul
+.texteAccroche
 {
-    width: 200px;
-    display:flex ;
-    right: 1%;
-    bottom:80%;
-    top: 0em;
-    text-decoration: none;
-    padding-right: 90px;   
+    display: flex;
+    flex-direction: column;
 }
-header li 
-{
-    display: inline;
-    height: auto;
-    margin-right: 50px;
-}
-.navigation
-{
-    display: column;
-
-}
-.navigation h1
+.titreH1
 {
     width: 500px;
-    font-size: medium;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
-.navigation p
+.sousTitreh1
 {
     width: 400px;
     font-size: small;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 .inputSearch
 {
@@ -81,7 +67,7 @@ border: none;
 { 
     outline: none; 
 }
-.button
+.buttonSearch
 {
     background-color:#0065FC;
     color: white;
@@ -95,135 +81,261 @@ border: none;
     border: 1px solid #0065FC;
     border-left: transparent;
 }   
-.filtre
+.blocParentfiltre
 {
     display: flex;
-    justify-content: flex-start;
-
+    gap: 15px;
+    width: fit-content;
+}
+.filtretitre
+{
+   display: flex;
+   font-size: 16px;
+   margin-top: 7px;
 }
 .filtreButton
 {
     display: flex;
+    align-items: center;
     margin: 0%;
-    margin-left: 1px;
-    gap: 5px;
-    
+    border: solid 1px rgb(212, 212, 212);
+    border-radius: 30px 30px 30px 30px;
+    border-left: 1px solid #DEEBFF;
+    height: 30px;
 }
-.filtreButton i
+.filtreButtonicons
 {
-    margin-top: 1%;
-    margin-right: 0px;
-    padding-right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
-    background-color: rgb(194, 216, 235);
+    background-color: #DEEBFF;
     color:#0065FC;
+    margin: 0px;
 }
-.filtreButton button 
+.filtreButtonname
 {
-    margin-top: 0%;
-    border:none;
-    background: none;
+    
+    text-decoration: none;
+    color: black ;
+    font-weight: bolder;
+    font-size: 14px;
 }
-.filtre button:hover
+.filtreButtonname:hover
 {
     color:rgb(29, 149, 247);
+}
+.infoIcone
+{
+    display: flex;
+    margin: 1px;
+    
 }
 .infoIcone i
 {
     color: #0065FC;
     border-radius: 100%;
-    border: #F2F2F2 solid 1px ;
+    border: #DEEBFF solid 1px ;
+    font-size: 9px;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 8px;
+    margin-right: 0%;
 }
-.h2titre
+.titreH2
 {
-    margin-bottom: 0px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+.hebergementPopulaire
+{
+    display: flex;
+    
+
 }
 .hebergements
 {
     display: flex;
+    flex-direction: column;
+}
+.blocParenthebergement
+{
+    display: flex;
     flex-wrap: wrap;
     width: 800px;
+    margin: 0%;
 }
 .blochebergement
 {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    text-decoration: none;
+    color: black;
+    box-shadow: #e4e1e1 0px 1px 0px;
+    border-radius: 25px 25px 25px 25px;
 }
 .blochebergement img
 {
     width: 190px;
-    height: 80px;
+    height: 100px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-bottom: 0%;
 }
 .blochebergement:hover
 {
     cursor: pointer;
-    transform: scale(1.1);   
+    transform: scale(1.1);
+    box-shadow: #e4e1e1 0px 5px 0px;   
 }
-.textehebergement h3
+.blocTextes
 {
     display: flex;
-    width: 180px;
+    flex-direction: column;
+    width: 210px;
+}
+.titresHebergement
+{
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+.nuitHebergement
+{
+    margin-bottom: 0%;
+    margin-top: 3px;
 }
 .etoiles
 {
-    display: inline;
-}
-.etoiles ul
-{
- display: flex;
- margin-left: 0%;
- padding-left: 0%;
- font-size: 12px;
- align-items: flex-start;
-}
-.etoiles li
-{
-    list-style-type: none;
-    width: 0%;
-}
-footer
-{
     display: flex;
-    justify-content: flex-start
-
+    margin: 0%;
 }
-footer h2
+.etoiles i
 {
-    text-align:;
+    width: 0%;
+    margin: 7px;
 }
-footer nav
-{
-width: 250px;
-margin: 0;
-padding: 0;
-margin-right: 10em;
-}
-footer nav a
+.afficher
 {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
-footer nav ul
+.Populaire
 {
+    display: flex;
+    flex-direction: column;
+}
+.blocPop
+{
+    display: flex;
+    color: black;
+    box-shadow: #e4e1e1 0px 1px 0px;
+    border-radius: 25px 25px 25px 25px;
+}
+.blocPopimg
+{
+    width: 120px;
+    height: 118px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.blocPoptexte
+{
+    width: 160px;
+    font-size: 12px;
+}
+.blocPop:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: #e4e1e1 0px 5px 0px;   
+}
+.Activités
+{
+    display: flex;
     
-    list-style-type: none; 
-    padding-left: 0;
-    margin-left: 0;
 }
-footer nav li
+.blocActivités
 {
-    margin-left:0 ;
+    display: flex;
+    flex-direction: column;
+}
+.imageActivités
+{
+    width: 280px;
+    height: 100px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.imageActivités1
+{
+    width: 280px;
+    height: 288px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.texteActivités
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.blocActivités:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
-}
-footer nav a:hover
+.footer
 {
-    color:rgb(29, 149, 247) ;
+    display: flex;
+    
+}
+.blocFooter
+{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.titreFooter
+{
+    font-weight: bolder;
+    margin: 3px;
+}
+.texteFooter
+{
+    text-decoration: none;
+    color: black;
+    margin: 3px;;
+}
+.texteFooter:hover
+{
+    color: #0065FC;
+}
+@media screen and (max-width:992px)
+{
+    *
+    {
+        width: auto;
+    }
+}
+@media screen and (width:768px)
+{
+    *
+    {
+        width: auto;
+    }
+}
+@media screen and (max-width:768px)
+{
+    *
+    {
+        width: auto;
+    }    
 }
