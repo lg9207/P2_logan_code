@@ -9,6 +9,8 @@ body
     text-align: justify;
     margin: 0px;
     color: black;
+    width: auto;
+   
 }
 .blocenTete
 {
@@ -65,6 +67,10 @@ border: none;
 .inputSearch:focus
 { 
     outline: none; 
+}
+.inputSearch:hover
+{
+    cursor: text ;
 }
 .buttonSearch
 {
@@ -154,26 +160,24 @@ border: none;
 .hebergementPopulaire
 {
     display: flex;
-    gap: 20px;
-
+    flex-direction: row;
 }
 .hebergements
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color:#F2F2F2;
     width: 900px;
-    height: 650px;
-    gap: 15px;
+    height: 570px;
+   
+
 }
 .blocParenthebergement
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
+    width: 850px;
+    margin: 0px auto ;
     
 }
 .blochebergement
@@ -182,15 +186,16 @@ border: none;
     flex-direction: column;
     text-decoration: none;
     color: black;
-    box-shadow: #e4e1e1 0px 1px 0px;
+    box-shadow: #cccccc 0px 1px 0px;
     border-radius: 25px 25px 25px 25px;
+    background-color: white;
 }
 .blochebergement img
 {
-    width: 190px;
-    height: 100px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 238px;
+    height: 125px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     margin-bottom: 0%;
 }
 .blochebergement:hover
@@ -227,6 +232,7 @@ border: none;
 }
 .afficher
 {
+    margin-left: 50px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -236,18 +242,22 @@ border: none;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
+    width: 440px;
+    
 }
 .blocPop
 {
     display: flex;
     color: black;
-    box-shadow: #e4e1e1 0px 1px 0px;
+    box-shadow: #cccccc 0px 1px 0px;
     border-radius: 25px 25px 25px 25px;
+
+    
 }
 .blocPopimg
 {
-    width: 120px;
-    height: 118px;
+    width: 130px;
+    height: 130px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -262,26 +272,46 @@ border: none;
     transform: scale(1.1);
     box-shadow: #e4e1e1 0px 5px 0px;   
 }
+.titreActivité
+{
+    display: flex;
+margin-left: 42px;
+    margin-top: 60px;
+}
 .Activités
 {
     display: flex;
-    
+    justify-content: space-evenly;
+   
 }
 .blocActivités
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
+    
+    
+}
+.blocActivités2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    
 }
 .imageActivités
 {
-    width: 280px;
-    height: 100px;
+    height: 90px;
+    width: 250px; 
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    
 }
 .imageActivités1
 {
-    width: 280px;
+    width: 300px;
     height: 288px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
