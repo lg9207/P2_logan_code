@@ -6,28 +6,25 @@ body
 {
     font-family: 'Raleway', sans-serif;
     font-size: small;
-    text-align: justify;
-    margin: 0px;
     color: black;
     width: auto;
-   
 }
 .blocenTete
 {
     display: flex;
-
+    justify-content: space-between;
 }
 .logoBooki
 {
-    float: left;
     width: 120px;
+    object-fit: cover;
+
 }
 .menuNavigation
 {
     display: flex;
     align-self: center;
     justify-content: right;
-    flex: 1;
     gap: 40px;
 } 
 .texteNavigation
@@ -38,6 +35,8 @@ body
 .texteNavigation:hover
 {
     color: #0065FC;
+    ;
+
 }
 .texteAccroche
 {
@@ -46,14 +45,15 @@ body
 }
 .titreH1
 {
-    width: 500px;
+    
     font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-weight: 800;
+    
+    
 }
 .sousTitreh1
 {
-    width: 400px;
+    
     font-size: small;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -160,25 +160,23 @@ border: none;
 .hebergementPopulaire
 {
     display: flex;
-    flex-direction: row;
 }
 .hebergements
 {
     display: flex;
     flex-direction: column;
     background-color:#F2F2F2;
-    width: 900px;
-    height: 570px;
-   
-
+    margin-left: 20px;
+    
 }
 .blocParenthebergement
 {
     display: flex;
     flex-wrap: wrap;
-    width: 850px;
-    margin: 0px auto ;
-    
+    justify-content: space-around;
+    margin-top: 0px ;
+    margin-left: 10px;
+
 }
 .blochebergement
 {
@@ -186,14 +184,15 @@ border: none;
     flex-direction: column;
     text-decoration: none;
     color: black;
-    box-shadow: #cccccc 0px 1px 0px;
+    box-shadow: #e4e1e1 0px 1px 0px;
     border-radius: 25px 25px 25px 25px;
     background-color: white;
 }
 .blochebergement img
 {
-    width: 238px;
-    height: 125px;
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-bottom: 0%;
@@ -208,7 +207,6 @@ border: none;
 {
     display: flex;
     flex-direction: column;
-    width: 210px;
 }
 .titresHebergement
 {
@@ -232,38 +230,40 @@ border: none;
 }
 .afficher
 {
-    margin-left: 50px;
+    margin-left: 35px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 15px;
 }
 .Populaire
 {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 440px;
-    
+    margin: 0%;
 }
 .blocPop
 {
     display: flex;
     color: black;
-    box-shadow: #cccccc 0px 1px 0px;
+    box-shadow: #e4e1e1 0px 1px 0px;
     border-radius: 25px 25px 25px 25px;
-
+    
+    
     
 }
 .blocPopimg
 {
     width: 130px;
     height: 130px;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 .blocPoptexte
 {
-    width: 160px;
+
     font-size: 12px;
 }
 .blocPop:hover
@@ -275,13 +275,13 @@ border: none;
 .titreActivité
 {
     display: flex;
-margin-left: 42px;
     margin-top: 60px;
 }
 .Activités
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    
    
 }
 .blocActivités
@@ -298,23 +298,23 @@ margin-left: 42px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
     
 }
 .imageActivités
 {
-    height: 90px;
-    width: 250px; 
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    
+    height: 110px;
+    width: 300px; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
 }
 .imageActivités1
 {
     width: 300px;
-    height: 288px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
 }
 .texteActivités
 {
@@ -331,14 +331,12 @@ margin-left: 42px;
 .footer
 {
     display: flex;
-    
 }
 .blocFooter
 {
     width: 500px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 .titreFooter
 {
@@ -349,7 +347,7 @@ margin-left: 42px;
 {
     text-decoration: none;
     color: black;
-    margin: 3px;;
+    margin: 3px;
 }
 .texteFooter:hover
 {
@@ -369,10 +367,75 @@ margin-left: 42px;
         width: auto;
     }
 }
-@media screen and (max-width:768px)
+@media all and (max-width:768px)
 {
     *
     {
+        margin: 10px;
+    }  
+    .blocPage
+    {
         width: auto;
-    }    
+
+    }
+    .blocenTete
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .logoBooki
+    {
+    
+       width: 130px;
+       margin-left: 150px;
+       
+    
+    }
+    .menuNavigation
+    {
+
+        font-size: 15px;
+        width:auto;
+        gap: 100px;
+    }
+    .texteAccroche
+    {
+        
+    }
+    .titreH1
+    {
+        font-size: 24px;
+        font-weight: 500;
+        width: auto ;
+        border: 1px solid black;
+        margin-left: 30px;
+        
+    }
+    .sousTitreh1
+    {
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    .inputSearch
+    {
+        width: 110px;
+    }
+    .buttonSearch
+    {
+
+    }
+    .blocParentfiltre
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        ;
+    }
+    .filtreButton
+    {
+        
+        
+        
+    }
+
 }
