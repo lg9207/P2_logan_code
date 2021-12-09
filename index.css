@@ -89,14 +89,20 @@ border: none;
 .blocParentfiltre
 {
     display: flex;
+   
+    
+}
+.blocFiltre
+{
+    display: flex;
     gap: 15px;
-    width: fit-content;
+    
 }
 .filtretitre
 {
    display: flex;
    font-size: 16px;
-   margin-top: 7px;
+   align-items: center;
 }
 .filtreButton
 {
@@ -369,73 +375,141 @@ border: none;
 }
 @media all and (max-width:768px)
 {
-    *
-    {
-        margin: 10px;
-    }  
+   
     .blocPage
     {
         width: auto;
-
+        flex-direction: column;
     }
     .blocenTete
     {
         display: flex;
         flex-direction: column;
     }
+    .logo
+    {
+
+       align-self: center;
+       width: auto;
+       
+    }
     .logoBooki
     {
-    
-       width: 130px;
-       margin-left: 150px;
-       
-    
+        
+        padding-left: 0px;
+        width: 85px;
     }
     .menuNavigation
     {
-
-        font-size: 15px;
-        width:auto;
-        gap: 100px;
-    }
-    .texteAccroche
-    {
+        
+        
+        width: auto;
+        gap: 50px;
+        margin: 0%;
         
     }
     .titreH1
     {
-        font-size: 24px;
+        
+        font-size: 18px;
         font-weight: 500;
         width: auto ;
-        border: 1px solid black;
-        margin-left: 30px;
-        
     }
     .sousTitreh1
     {
-        margin-left: 30px;
-        font-size: 15px;
+        font-size: 12px;
+        color: grey;
+    }
+    .Bouton
+    {
+        display: flex;
+        flex-direction: row;
+        width: auto;
     }
     .inputSearch
     {
-        width: 110px;
+        
     }
     .buttonSearch
     {
-
+        
     }
     .blocParentfiltre
     {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        ;
+        font-weight: 300;
     }
-    .filtreButton
+    .blocFiltre
     {
-        
-        
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    .infoIcone
+    {
+        color: grey;
+        font-size: 12px;
+    }
+    .Populaire:nth-child(2)
+    {
+        order: 1;
+    }
+    .hebergements:nth-child(1)
+    {
+        order: 2;
         
     }
-
+    .hebergementPopulaire
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .titreH2
+    {
+        font-size: 17px;
+        text-align: start;
+    }
+    .blocPopimg
+    {
+    width: 100px;
+    height: 100px;
+    }      
+    .blocPoptexte
+    {
+    font-size: 11px;
+    font-weight: none;
+    }
+    .titreH1
+    {
+        font-size: 17px;
+    }
+    .hebergements
+    {
+        flex-direction: column;
+        display: flex;
+        margin-left: 0%;
+    }
+    .blocParenthebergement
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .blochebergement img
+    {
+        width: 250px;
+        height: 85px;
+    }
+    .Activités
+    {
+        flex-wrap: wrap;
+    }
+    .imageActivités,.imageActivités1
+    {
+        width: 250px;
+        height: 100px;
+    }
+   .footer
+   {
+       flex-wrap: wrap;
+   }
 }

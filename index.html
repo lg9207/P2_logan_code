@@ -24,11 +24,13 @@
 
     <div class="blocPage">
         <header class="blocenTete">
-            <img src="images/Booki.png" alt="" class="logoBooki" />
+            <div class="logo">
+            <img src="images/Booki.png" alt="" class="logoBooki" /></div>
             <nav class="menuNavigation">
                 <a href="#hebergementsAmarseille" class="texteNavigation">Hébergements</a>
                 <a href="#activités" class="texteNavigation">Activités</a>
             </nav>
+        
         </header>
 
         <!--trouver votre hebergement-->
@@ -40,15 +42,18 @@
         <!--formulaire-->
 
         <form method="GET" action="#">
+            <div class="Bouton">
             <i class="fas fa-map-marker-alt"></i>
             <input class="inputSearch" type="text" size="40">
-            <button class="buttonSearch" type="button">Rechercher</button>
+            <button class="buttonSearch" type="button" i class="fas fa-search"></i>Rechercher</button>
+        </div>
         </form>
 
         <!--filtres-->
 
         <div class="blocParentfiltre">
             <h3 class="filtretitre">Filtres</h3>
+            <div class="blocFiltre">
             <div class="filtreButton">
                 <div class="filtreButtonicons">
                     <i class="fas fa-money-bill-wave icon"></i>
@@ -73,6 +78,7 @@
                 </div>
                 <a href="#" class="filtreButtonname">Animaux autorisés</a>
             </div>
+        </div>
         </div>
 
         <!--information-->
