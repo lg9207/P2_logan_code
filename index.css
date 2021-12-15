@@ -1,13 +1,10 @@
-*
-{
-    margin: 10px;
-}
 body
 {
     font-family: 'Raleway', sans-serif;
     font-size: small;
     color: black;
     width: auto;
+    margin: 10px;
 }
 .blocenTete
 {
@@ -166,22 +163,24 @@ border: none;
 .hebergementPopulaire
 {
     display: flex;
+    gap: 20px
 }
 .hebergements
 {
     display: flex;
     flex-direction: column;
     background-color:#F2F2F2;
-    margin-left: 20px;
+    
     
 }
 .blocParenthebergement
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-evenly;
     margin-top: 0px ;
-    margin-left: 10px;
+   width: 900px;
+    gap: 20px;
 
 }
 .blochebergement
@@ -246,8 +245,12 @@ border: none;
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #F2F2F2;
-    margin: 0%;
+    width: 440px;
+    padding-left: 15px;
+   padding-right: 15px;
+   gap: 15px;
 }
 .blocPop
 {
@@ -255,7 +258,7 @@ border: none;
     color: black;
     box-shadow: #e4e1e1 0px 1px 0px;
     border-radius: 25px 25px 25px 25px;
-    
+    width: 350px;
     
     
 }
